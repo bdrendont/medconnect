@@ -1,0 +1,650 @@
+/* GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
+/* LOGIN */
+.in-stripe {
+    background-color: #CB7B53;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 75px;
+    font-weight: 600;
+    letter-spacing: 7px;
+}
+.back1{
+    background: url(../img/back1.avif);
+    width: 100%;
+    height: 78vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+.div-15, .div-60, .div-15 {
+    text-align: center;
+}
+.div-15 {
+    flex: 15%;
+}
+.div-60 {
+    flex: 60%;
+}
+.div-15 {
+    flex: 15%;
+}
+.div-1 {
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #544126;
+    color: white;
+}
+.div-inicio {
+    background-color: #C59D72;
+    color: white;
+    padding: 10px;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 100px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.contenedor-datos{
+    background-color: #544126;
+    color: white;
+    padding: 10px;
+    margin-left: 180px;
+    margin-right: 180px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.boton {
+    background-color: #A0A1A2;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.caja {
+    background-color: white;
+    color: black;
+    border: 0cap;
+    border-radius: 30px; 
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    height: 20px;
+    font-size: 17px;
+}
+.caja::placeholder{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-size: 17px;
+font-weight: 500;
+}
+.label-contrasena, .label-inicio{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #C59D72;
+}
+.botoninicio{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+    background-color: #D56B55;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    width: 400px;
+    height: 50px;
+    border: 1px;
+    cursor: pointer;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+    flex: 33%;
+    float: right;
+    margin-right: 10px;
+}
+.textend{
+    flex: 33%;
+    margin-left: 12px;
+    font-size: 15px;
+    font-weight: 400;
+    align-items: center;
+    line-height: 1.3;
+    color: #A0A1A2;
+}
+.textend2{
+    text-align: center;
+    color: #A0A1A2;
+    font-size: 15px;
+}
+.correo{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* NEW ACCOUNT */
+.initialnaccount{
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.iconoinitialaccount{
+    flex: 5%;
+    background-color: #D56B55;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    cursor: pointer;
+}
+.textinitial{
+    flex: 95%;
+    background-color: #544126;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 16px;
+}
+.textinitial2{
+    color: #A0A1A2;
+    font-size: 18px;
+}
+.contenedorcaj{
+    display: flex;
+    background-color: #C59D72;
+    height: 646px;
+}
+.izqcon{
+    flex: 50%;
+    text-align: center;
+}
+.dercon{
+    flex: 50%;
+    text-align: center;
+}
+.cajc{
+    background-color: white;
+    color: black;
+    border: 0cap;
+    border-radius: 30px; 
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 5px;
+    height: 30px;
+    font-size: 17px;
+}
+.cajsub{
+    background-color: white;
+    color: black;
+    border: 0cap;
+    border-radius: 30px; 
+    padding: 10px;
+    width: 10%;
+    height: 30px; 
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+.cajcel{
+    background-color: white;
+    color: black;
+    border: 0cap;
+    border-radius: 30px; 
+    padding: 10px;
+    width: 67%;
+    height: 30px; 
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+.cajc::placeholder, .cajsub::placeholder, .cajcel::placeholder{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-size: 17px;
+font-weight: 500;
+}
+.aviso{
+    background-color: #C59D72;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contdocyper{
+    background-color: #C59D72;
+    display: flex;
+}
+.updoc{
+    background-color: white;
+    padding: 10px;
+    flex: 50%;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 30px; 
+    font-weight: 600;
+}
+.bdoc{
+    background-color: #544126;
+    padding: 45px;
+    border-radius: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.titleper{
+    padding: 10px;
+    background-color: #544126;
+    border-radius: 30px;
+    color: #D56B55;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.tiper{
+    width: 300px;
+    height: 50px;
+    border: 0;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.perf{
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.botoncrear{
+text-align: center;
+background-color: #C59D72;
+height: 65px;
+}
+.bcc{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+    background-color: #D56B55;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    width: 400px;
+    height: 50px;
+    border: 1px;
+    cursor: pointer;
+}
+/* GENERAL JEFE DE SALA 1 */
+.generalarriba{
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+.logogeneral{
+    flex: 90%;
+    background-color: #544126;
+    color: black;
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 7px;
+}
+.desperfil{
+    flex: 10%;
+    background-color: #D56B55;
+    color: white;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+.contprin{
+    background-color: #C59D72;
+    height: 780px;
+}
+.cont1{
+    display: flex;
+}
+.cont11, .cont12{
+    flex: 50%;
+    display: flex;
+    background-color: white;
+    height: 300px;
+    margin-top: 55px;
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.textcuadro{
+    flex: 50%;
+    color: #D56B55;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+.colortextcuadro{
+    color: #A0A1A2;
+    font-size: 20px;
+    letter-spacing: 8px;
+}
+.botoncuadro{
+    flex: 50%;
+    text-align: center;
+    padding: 10px;
+    background-color: #544126;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+
+.cont12{
+    flex: 50%;
+} 
+.cont2{
+    display: flex;
+}
+.cont21, .cont22{
+    display: flex;
+    flex: 50%;
+    background-color: white;
+    height: 300px;
+    margin-top: 55px;
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.botonj{
+    background-color: #A0A1A2;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 47%;
+    font-size: 80px;
+    font-weight: 600;
+}
+.endgeneral{
+    display: flex;
+    height: 91px;
+    background-color: white;
+}
+.logogen{
+    flex: 33.3%;
+    width: 87px;
+}
+.cregen{
+    flex: 33.3%;
+    margin-top: 25px;
+}
+.icongen{
+    flex: 33.3%;
+    text-align: right;
+    margin-right: 5px;
+    font-size: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* GENERAL INTEGRANTE DE SALA 1 */
+.contprinint{
+    background-color: #C59D72;
+    height: 700px;
+}
+.nombresala{
+    background-color: #D56B55;
+    width: 25%;
+    height: 33px;
+    border-top-right-radius: 30px; 
+  border-bottom-right-radius: 30px;
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.conteinerpaciente{
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+}
+.cp1{
+    flex: 30%;
+    margin-left: 40px;
+    background-color: #CB7B53;
+    border-radius: 30px;
+    height: 620px;
+}
+.cp2{
+    flex: 30%;
+    background-color: #CB7B53;
+    margin-left: 40px;
+    border-radius: 30px;
+    height: 620px;
+}
+.cp3{
+    flex: 30%;
+    background-color: #CB7B53;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 30px;
+    height: 620px;
+}
+.contend{
+    background-color: #A6A6A6;
+    height: 80px;
+}
+.nombreusuario{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+    background-color: #D56B55;
+    color: black;
+    border: 0cap;
+    border-radius: 30px; 
+    padding: 10px;
+    width: 93%;
+    margin-bottom: 5px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+}
+.nombreusuario::placeholder{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-size: 25px;
+font-weight: 700;
+color: black;
+letter-spacing: 3px;
+}
+.tipid{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+    background-color: white;
+    color: black;
+    border: 0cap;
+    border-radius: 30px; 
+    padding: 10px;
+    width: 7%;
+    margin-bottom: 5px;
+    height: 12px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 3px;
+    font-weight: 800;
+}
+.tipid::placeholder, .ccusuario::placeholder, .ubicacionusuario::placeholder, .cuadroob::placeholder{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-size: 17px;
+font-weight: 500;
+color: #A6A6A6;
+}
+.ccusuario{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 30px; 
+    padding: 10px;
+    width: 35%;
+    margin-bottom: 5px;
+    height: 12px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 3px;
+    font-weight: 800;
+}
+.ubicacionusuario{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+        background-color: white;
+        color: black;
+        border: 0cap;
+        border-radius: 30px; 
+        padding: 10px;
+        width: 35%;
+        margin-bottom: 5px;
+        height: 12px;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 1px;
+        font-weight: 800;
+}
+.cuadroob{
+    border-radius: 30px;
+    width: 92%;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+    border: 0;
+}
+.botonintsalagen{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+        background-color: #C59D72;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        color: black;
+        letter-spacing: 1px;
+        width: 300px;
+        height: 30px;
+        border: 1px;
+        cursor: pointer;
+}
+.botondosis{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        color: black;
+        letter-spacing: 1px;
+        width: 300px;
+        height: 60px;
+        border: 1px;
+        cursor: pointer;
+}
+.botonadd {
+    background-color: #A0A1A2;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    margin-top: 260px;
+    margin-right: 28px;
+}
+.botonendin{
+    background-color: #A0A1A2;
+    height: 98px;
+}
+.btton{
+    background-color: #544126;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+        margin-top: 1px;
+        margin-bottom: 5px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        color: black;
+        letter-spacing: 1px;
+        width: 500px;
+        height: 55px;
+        border: 1px;
+        cursor: pointer;
+        letter-spacing: 3px;
+
+}
+.containerboones{
+    display: flex;
+    height: 80px;
+    text-align: center;
+}
+.b1, .b2, .b3{
+    flex: 33.3%;
+    margin-top: 12px;
+}
