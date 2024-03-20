@@ -38,18 +38,18 @@
                     Inicio de sesión
                 </div>
                 <div class="contenedor-datos">
-                    <form action="" method="" id="" name="">                        
-                        <input type="email" id="correo" name="correo" placeholder="Correo electrónico" class="caja" required>
-                        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" class="caja" required>
+                    <form action="" method="post" id="form_login" name="form_login">                        
+                        <input type="email" id="correo" name="correo" placeholder="Correo electrónico" class="caja" required="" />
+                        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" class="caja" required="" />
                         <br>
                         <label for="contrasena" class="label-contrasena">¿Olvidaste tu contraseña?</label>
                         <br>
-                        <button type="submit" class="botoninicio">Iniciar Sesión</button>
+                        <button type="button" id="btn-iniciar" name="btn-iniciar" class="botoninicio">Iniciar Sesión</button>
                         <br>
                         <br>
                         <label for="inicio" class="label-inicio">¿No tienes una cuenta?</label>
                         <br>
-                        <button name="btnnueva" onclick="ruta('newaccount.html')" type="button" class="botoninicio">Crea una cuenta</button>
+                        <button id="btnnueva" name="btnnueva" type="button" class="botoninicio">Crea una cuenta</button>
                     </form>
                 </div>
             </div>
@@ -79,6 +79,7 @@
             <div class="logo"><img src="../img/logosena.png" alt="logo" class="logo"></div>
         </div>
     </footer>
+    <script src="../js/jquery-3.7.1.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
