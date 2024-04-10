@@ -91,6 +91,9 @@ font-family: 'Rubik', sans-serif;
     height: 20px;
     font-size: 17px;
 }
+.focus {
+    border-bottom: 5px solid green;
+}
 .caja::placeholder{
     font-family: 'Open Sans', sans-serif;
 font-family: 'Rubik', sans-serif;
