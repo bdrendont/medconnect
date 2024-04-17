@@ -6,27 +6,64 @@ function ruta(url){
 }
 
 $("#btn-iniciar").on("click",()=>{
-    $("#btnnueva").fadeOut(5000)
-    $("#form_login").submit()
+    //$("#btnnueva").fadeOut(5000)
+    //$("#form_login").submit()
 })
 
 $("#btnnueva").on("click",()=>{
     ruta("newaccount.html")
 })
 
-$("#form_login").on("submit",()=>{
+$("#form_login").on("submit",(e)=>{
+    e.preventDefault();
     //alert("ON Submit del Formulario");
-    let data = $("#form_login").serialize()
-    alert("Datos ha enviar\n\n"+data)
-    ruta("../control/login.php")
-    return false
+    let nom_usu=$("#correo").val()
+    let pass_usu=$("#contrasena").val()
+    //let data = $("#form_login").serialize()
+    if(nom_usu!="" && pass_usu!=""){
+        let info = {
+            "user":nom_usu,
+            "pass":pass_usu
+        }
+        //alert("ok --- inicia Ajax")
+        //Aplicando tecnica de Ajax
+        $.ajax({
+            data: info,
+            url: "../control/login.php",
+            type: "GET",
+            beforeSend:()=>{
+                console.log("Procesando la peticion...")
+            }
+        }).done((resp)=>{
+            $("#div-msg1").html(resp)
+        })
+        //Fin Ajax
+
+        //Aplicando el metodo de Fetch
+        const div = document.getElementById('div-msg2')
+        fetch("../control/login.php?user="+nom_usu+"&pass="+pass_usu,info).then((resp)=>{div.innerHTML += resp.json()})   
+        //Fin Fetch
+        //fetch("../control/login.php",info).then((resp)=>resp.json()).then((dataj)=>{
+            //div.innerHTML += dataj[0]
+        //})
+
+        //alert("Datos ha enviar\n\n"+data)
+        //return false
+    }else{
+        alert("Ingrese la informacion requerida")
+        //alert("Datos ha enviar\n\nUsuario: "+nom_usu+"\nContraseña: "+pass_usu)
+        $("#correo").focus()
+    }
+    //alert("Datos ha enviar\n\nUsuario: "+nom_usu+"\nContraseña: "+pass_usu)
+    //ruta("../control/login.php")
+   
     //Ajax
 })
 
 //Cuando en Js de la pagina este listo se aplica el siguiente codigo
 $(()=>{
     
-    $("#title").slideUp(1000).fadeIn(1000).toggle("slow").show("slow")
+    $("#title").slideUp(1000).show("slow")
     $(".boton").mousedown(()=>{
         alert("Mas información")
     })
