@@ -21,9 +21,10 @@ $("#form_login").on("submit",(e)=>{
     let pass_usu=$("#contrasena").val()
     //let data = $("#form_login").serialize()
     if(nom_usu!="" && pass_usu!=""){
+        $("#contrasena").val(md5(pass_usu))
         let info = {
             "user":nom_usu,
-            "pass":pass_usu
+            "pass":md5(pass_usu)
         }
         //alert("ok --- inicia Ajax")
         //Aplicando tecnica de Ajax
@@ -41,7 +42,7 @@ $("#form_login").on("submit",(e)=>{
 
         //Aplicando el metodo de Fetch
         const div = document.getElementById('div-msg2')
-        fetch("../control/login.php?user="+nom_usu+"&pass="+pass_usu,info).then((resp)=>{div.innerHTML += resp.json()})   
+        fetch("../control/login.php?user="+nom_usu+"&pass="+md5(pass_usu),info).then((resp)=>{div.innerHTML += resp.json()})   
         //Fin Fetch
         //fetch("../control/login.php",info).then((resp)=>resp.json()).then((dataj)=>{
             //div.innerHTML += dataj[0]
